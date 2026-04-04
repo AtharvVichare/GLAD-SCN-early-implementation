@@ -5,7 +5,7 @@
 > Trained exclusively on Standard Model jets — no BSM signal seen during training.
 
 ⚠ Note on Current Evaluation Metrics
-Quantitative metrics such as AUC-ROC, signal efficiency, and anomaly score separation are directly dependent on the convergence of the SimCLR contrastive loss (L₂). Full convergence of InfoNCE at this scale is computationally intensive — this early Phase 1 implementation does not have access to the compute required to drive L₂ to its optimal minimum.
+Quantitative metrics such as AUC-ROC, signal efficiency, and anomaly score separation are directly dependent on the convergence of the SimCLR contrastive loss (L₂). Full convergence of InfoNCE at this scale is computationally intensive — I do not have access to the high computation power required to drive L₂ to its optimal minimum.
 Despite this, the model demonstrates meaningful progress even in the under-converged regime:
 
 L₃ successfully reduces the distance between Z_G and Z'_G for SM jets across training, confirmed by PCA visualization
